@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    color: #00796b;
+    text-align: center;
+}
+
+header {
+    background-color: #00796b;
+    color: #fff;
+    padding: 20px;
+}
+
+header .logo h1 {
+    font-size: 36px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+nav.menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav.menu ul li {
+    margin: 0 10px;
+}
+
+nav.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+section img {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.galeria .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+form {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button[type="reset"] {
+    background-color: #ccc;
+}
+
+footer {
+    background-color: #00796b;
+    color: #fff;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .gallery img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .gallery img {
+        width: 48%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .gallery img {
+        width: 23%;
+        margin-bottom: 10px;
+    }
+}
+
+ul, ol {
+    margin: 20px auto;
+    padding: 0;
+    max-width: 600px;
+}
+
+ul li, ol li {
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.content-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-table, .content-table th, .content-table td {
+    border: 1px solid #00796b;
+}
+
+.content-table th, .content-table td {
+    padding: 12px;
+    text-align: center;
+}
+
+
